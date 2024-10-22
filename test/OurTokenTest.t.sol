@@ -5,7 +5,7 @@ pragma solidity ^0.8.19;
 import {DeployOurToken} from "../script/DeployOurToken.s.sol";
 import {OurToken} from "../src/OurToken.sol";
 import {Test, console} from "forge-std/Test.sol";
-import {ZkSyncChainChecker} from "lib/foundry-devops/src/ZkSyncChainChecker.sol";
+import {ZkSyncChainChecker} from "../lib/foundry-devops/src/ZkSyncChainChecker.sol";
 
 interface MintableToken {
     function mint(address, uint256) external;
